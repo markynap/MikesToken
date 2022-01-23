@@ -23,10 +23,9 @@ import "./ReentrantGuard.sol";
  *  Buys/Transfers Directly Deletes Tokens From Fees
  * 
  *  Sell Fees Go Toward:
- *  70% XUSD Distribution
+ *  75% XUSD Distribution
  *  20% XUSD Buy and Burn
  *  15% Marketing
- *  5%  Development
  */
 contract PUMP is IERC20, ReentrancyGuard {
     
