@@ -76,6 +76,10 @@ contract Distributor is IDistributor, ReentrancyGuard {
         _master = newOwner;
         emit TransferedOwnership(newOwner);
     }
+
+    function setXUSD(address XUSD_) external onlyMaster {
+        XUSD = XUSD_;
+    }
     
     /** Withdraw Assets Mistakingly Sent To Distributor, And For Upgrading If Necessary */
     function withdraw(bool bnb, address token, uint256 amount) external onlyMaster {
